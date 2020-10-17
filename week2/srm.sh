@@ -1,7 +1,16 @@
 #!/bin/bash
 
-if ! [ -e ~/RECYCLE ]
+recycle=~/RECYCLE
+
+if ! [ -e $recycle ]
 then
-	mkdir ~/RECYCLE
+	mkdir $recycle
+fi
+
+if [ -e $1 ]
+then
+	mv $1 $recycle
+else
+	echo "No such file"
 fi
 
