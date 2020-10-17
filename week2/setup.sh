@@ -5,7 +5,7 @@ then
 	mkdir ~/bin
 fi
 
-mv ./python_101_home_work/week2/srm.sh ~/bin/
+mv ./python_101_home_work/week2/srm ~/bin/
 
 if ! [ -e ~/.bash_profile ]
 then
